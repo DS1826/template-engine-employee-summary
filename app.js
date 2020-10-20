@@ -105,6 +105,34 @@ function createManager() {
 
 function createEngineer() {
     console.log("Creating Engineer");
+    inquirer.prompt([
+        {
+            type: "input",
+            name: "name",
+            message: "What is the Engineer's name?"
+        },
+        {
+            type: "number",
+            name: "id",
+            message: "What is the Engineer's ID number?"
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "What is the Engineer's email address?"
+        },
+        {
+            type: "input",
+            name: "github",
+            message: "What is the Engineer's GitHub username?"
+        }
+    ]).then(function(data) {
+
+        const employee = new Manager(data.name, data.id, data.email, data.github);
+        teamArray.push(employee);
+        createNewEmployee();
+
+    });
 }
 
 function createIntern() {
