@@ -137,6 +137,34 @@ function createEngineer() {
 
 function createIntern() {
     console.log("Creating Intern");
+    inquirer.prompt([
+        {
+            type: "input",
+            name: "name",
+            message: "What is the Intern's name?"
+        },
+        {
+            type: "number",
+            name: "id",
+            message: "What is the Intern's ID number?"
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "What is the Intern's email address?"
+        },
+        {
+            type: "input",
+            name: "school",
+            message: "Which school is the Intern currently enrolled?"
+        }
+    ]).then(function(data) {
+
+        const employee = new Intern(data.name, data.id, data.email, data.school);
+        teamArray.push(employee);
+        createNewEmployee();
+
+    });
 }
 
 function writeFile() {
