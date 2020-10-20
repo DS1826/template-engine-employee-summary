@@ -128,7 +128,7 @@ function createEngineer() {
         }
     ]).then(function(data) {
 
-        const employee = new Manager(data.name, data.id, data.email, data.github);
+        const employee = new Engineer(data.name, data.id, data.email, data.github);
         teamArray.push(employee);
         createNewEmployee();
 
