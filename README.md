@@ -4,7 +4,8 @@
 This Node CLI application takes user information provided about employees to generate an HTML Team Profile webpage that displays summaries for each employee.
 
 ## Sample Output
-<img width="1063" alt="Screen Shot 2020-10-16 at 9 38 08 AM" src="https://user-images.githubusercontent.com/67653440/96749872-5b712d80-1399-11eb-90a6-8d2a94002021.png">
+<img width="1210" alt="Screen Shot 2020-10-21 at 12 30 14 PM" src="https://user-images.githubusercontent.com/67653440/96750117-97a48e00-1399-11eb-807c-0ffbd0b8f0fe.png">
+
 
 ## Tests Screenshot
 <img width="1063" alt="Screen Shot 2020-10-16 at 9 38 08 AM" src="https://user-images.githubusercontent.com/67653440/96749520-edc50180-1398-11eb-84e9-fd8998b5b592.png">
